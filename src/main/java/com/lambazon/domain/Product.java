@@ -1,7 +1,7 @@
 package com.lambazon.domain;
 
 public class Product {
-	
+
 	private Integer id;
 	private String name, description, details;
 	private int quantity;
@@ -63,8 +63,11 @@ public class Product {
 		this.price = price;
 	}
 
+	/**
+	 * @return : total price of an article in inventory depending on the quantity
+	 */
 	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
-		return 0.0;
+		double totalInventoryPrice = (price * quantity);
+		return totalInventoryPrice;
 	}
 }
