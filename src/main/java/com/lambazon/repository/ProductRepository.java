@@ -26,7 +26,8 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 25, 150000, "Switch Cisco C2960-48TT-S", "Switch Cisco"));
 		products.put(++id, new Product(id, -5, 80.00, "Xiaomi AMAZFIT", "Fit watch Xiaomi"));
 	}
-	
+
+
 	public List<Product> products() {
 		
 		if (products.isEmpty()) {
