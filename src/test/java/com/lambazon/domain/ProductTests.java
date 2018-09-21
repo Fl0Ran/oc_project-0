@@ -35,4 +35,5 @@ public class ProductTests {
 		Product p = new Product(0, 0, 1000, null, null);
 		assertThat(p.getPrice()).isEqualTo(1000);
 	}
+
 }

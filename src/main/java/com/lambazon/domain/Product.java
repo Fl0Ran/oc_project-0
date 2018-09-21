@@ -47,7 +47,15 @@ public class Product {
 		this.details = details;
 	}
 
+	/**
+	 * if total of quantity it's under 0 , quantity equal 0
+	 * @return
+	 */
 	public int getQuantity() {
+		if( quantity < 0)
+		{
+			quantity = 0;
+		}
 		return quantity;
 	}
 
@@ -55,7 +63,19 @@ public class Product {
 		this.quantity = quantity;
 	}
 
+	/**
+	 * if total of price less than 0 price = 0 , same if the price is greater than 1000 , price = 1000
+	 * @return
+	 */
 	public double getPrice() {
+		if (price < O )
+		{
+			price = 0;
+		}
+		else if(price > 1000)
+		{
+			price = 1000;
+		}
 		return price;
 	}
 
@@ -70,4 +90,5 @@ public class Product {
 		double totalInventoryPrice = (price * quantity);
 		return totalInventoryPrice;
 	}
+
 }
