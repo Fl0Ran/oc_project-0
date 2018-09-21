@@ -68,7 +68,7 @@ public class Product {
 	 * @return
 	 */
 	public double getPrice() {
-		if (price < O )
+		if (price < 0 )
 		{
 			price = 0;
 		}
@@ -87,8 +87,7 @@ public class Product {
 	 * @return : total price of an article in inventory depending on the quantity
 	 */
 	public double getInventoryPrice() {
-		double totalInventoryPrice = (price * quantity);
-		return totalInventoryPrice;
+        return (price * quantity);
 	}
 
 }
