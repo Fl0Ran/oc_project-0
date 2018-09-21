@@ -2,8 +2,6 @@ package com.lambazon.controller;
 
 import javax.inject.Inject;
 
-import com.lambazon.repository.ProductRepository;
-import javafx.scene.control.Tab;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
